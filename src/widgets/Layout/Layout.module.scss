@@ -1,0 +1,25 @@
+.container {
+  height: 100dvh;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 64px 1fr;
+  @media (max-width: 1024px) {
+    height: 100%;
+  }
+
+  box-sizing: border-box;
+}
+
+.offsetContainer {
+  padding: 0 30px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.body {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  box-sizing: border-box;
+  padding-bottom: 40px;
+}
