@@ -4,6 +4,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  min-height: 300px;
 
   & > p {
     text-align: center;
@@ -53,6 +54,10 @@
   }
   td {
     padding: 7px 0;
+
+    &:nth-child(4) {
+      white-space: nowrap;
+    }
   }
   tbody > tr:first-child td {
     padding-top: 18px;
