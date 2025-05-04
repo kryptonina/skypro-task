@@ -1,0 +1,72 @@
+.container {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  & > p {
+    text-align: center;
+  }
+}
+
+.tableContainer {
+  overflow: auto;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+  @media (max-width: 576px) {
+    flex-wrap: wrap;
+  }
+}
+
+.table {
+  width: 100%;
+  padding: 0 32px;
+  border-collapse: separate;
+  border-spacing: 0;
+  position: relative;
+  th {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--secondary-text);
+    text-align: left;
+    padding: 0 0 6px;
+  }
+  thead {
+    &::after {
+      content: "";
+      border-bottom: 1px solid var(--secondary-text);
+      width: calc(100% + 64px);
+      position: absolute;
+      margin: 0 -32px;
+    }
+    position: sticky;
+    background: var(--white-background);
+    top: 0;
+  }
+  td {
+    padding: 7px 0;
+  }
+  tbody > tr:first-child td {
+    padding-top: 18px;
+  }
+}
+
+.buttonsContainer {
+  display: flex;
+  column-gap: 12px;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}

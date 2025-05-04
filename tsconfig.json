@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext",
+            "ES2022.Array"
+        ],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "ES2022",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "paths": {
+            "@icons/*": [
+                "./src/shared/assets/icons/*"
+            ],
+            "@components/*": [
+                "./src/shared/components/*"
+            ],
+            "@widgets/*": [
+                "./src/widgets/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*",
+        "assets.d.ts"
+    ]
+}
